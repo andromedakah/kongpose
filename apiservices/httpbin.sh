@@ -18,7 +18,7 @@ if(curl --request POST --data 'paths[]=/httpbin' --data name=httpbin --header 'K
         echo "httpbin route not created"
     fi
 
-echo "httpbin service creation"
+echo "httpbin service testing with curl"
 if (curl --request GET "http://api.kong.lan/services/httpbin" --header 'Kong-Admin-Token: password' | grep "HTTP/1.1 200 OK" | tr -d '\r' ); 
     then
         echo "httpbin service response OK"
