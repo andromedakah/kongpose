@@ -12,8 +12,8 @@ x-kong-image:
   #image: kong/kong-gateway:2.8.2.4-alpine
   #image: kong/kong-gateway:3.2.2.1
   &kong-image
-  #image: ${KONG_DOCKER_IMAGE:-kong/kong-gateway:3.2.2.1}
-  image: ${KONG_DOCKER_IMAGE:-kong/kong-gateway:2.8.4.0-alpine}
+  image: ${KONG_DOCKER_IMAGE:-kong/kong-gateway:3.4.0.0}
+  #image: ${KONG_DOCKER_IMAGE:-kong/kong-gateway:2.8.4.0-alpine}
 
 x-kong-license:
   &kong-license
